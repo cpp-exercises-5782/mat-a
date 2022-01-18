@@ -3,9 +3,9 @@
 CXX=clang++-9 
 CXXFLAGS=-std=c++2a -Werror
 
-HEADERS=snowman.hpp
-OBJECTS=snowman.o
-SOURCES=snowman.cpp
+HEADERS=mat.hpp
+OBJECTS=mat.o
+SOURCES=mat.cpp
 
 run: demo
 	./$^

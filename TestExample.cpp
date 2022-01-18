@@ -10,7 +10,7 @@
  */
 
 #include "doctest.h"
-#include "snowman.hpp"
+#include "mat.hpp"
 using namespace ariel;
 
 #include <string>
@@ -30,14 +30,20 @@ string nospaces(string input) {
 }
 
 
-TEST_CASE("Good snowman code") {
-    CHECK(nospaces(snowman(11114411)) == nospaces("_===_\n(.,.)\n( : )\n( : )"));
-    /* Add more checks here */
+TEST_CASE("Good input") {
+	CHECK(nospaces(mat(9, 7, '@', '-')) == nospaces("@@@@@@@@@\n
+													 @-------@\n
+													 @-@@@@@-@\n
+													 @-@---@-@\n
+													 @-@@@@@-@\n
+													 @-------@\n
+													 @@@@@@@@@"));
+	/* Add more test here */
 }
 
-TEST_CASE("Bad snowman code") {
-    CHECK_THROWS(snowman(555));
-    /* Add more checks here */
+TEST_CASE("Bad input") {
+    CHECK_THROWS(mat(10, 5, '$', '%'));
+    /* Add more test here */
 }
 
 
