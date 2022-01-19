@@ -22,7 +22,7 @@ int main() {
 @-------@
 @@@@@@@@@
 */
-	cout << ariel::mat(13, 5, @, -) << endl; 
+	cout << ariel::mat(13, 5, '@', '-') << endl; 
 /* Should print:
 @@@@@@@@@@@@@
 @-----------@
