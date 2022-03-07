@@ -35,3 +35,6 @@ solution*
 *.app
 demo
 test
+
+# vs code configuration
+**/.vscode
