@@ -31,13 +31,13 @@ string nospaces(string input) {
 
 
 TEST_CASE("Good input") {
-	CHECK(nospaces(mat(9, 7, '@', '-')) == nospaces("@@@@@@@@@\n
-													 @-------@\n
-													 @-@@@@@-@\n
-													 @-@---@-@\n
-													 @-@@@@@-@\n
-													 @-------@\n
-													 @@@@@@@@@"));
+	CHECK(nospaces(mat(9, 7, '@', '-')) == nospaces("@@@@@@@@@\n"
+													 "@-------@\n"
+													 "@-@@@@@-@\n"
+													 "@-@---@-@\n"
+													 "@-@@@@@-@\n"
+													 "@-------@\n"
+													 "@@@@@@@@@"));
 	/* Add more test here */
 }
 
